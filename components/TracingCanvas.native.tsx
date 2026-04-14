@@ -1,7 +1,6 @@
 import { useRef, useState } from 'react';
-import { View, TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { Canvas, Path, Skia, useTouchHandler } from '@shopify/react-native-skia';
-import type { SkPath } from '@shopify/react-native-skia';
+import { View, PanResponder, TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { Svg, Path } from 'react-native-svg';
 
 interface Props {
   strokeColor?: string;
@@ -10,46 +9,56 @@ interface Props {
 }
 
 export default function TracingCanvas({ strokeColor = '#00897B', strokeWidth = 6, guideLetter }: Props) {
-  const [paths, setPaths] = useState<SkPath[]>([]);
-  const current = useRef<SkPath | null>(null);
+  const [paths, setPaths] = useState<string[]>([]);
+  const currentPoints = useRef<{ x: number; y: number }[]>([]);
 
-  const touchHandler = useTouchHandler({
-    onStart: ({ x, y }) => {
-      const p = Skia.Path.Make();
-      p.moveTo(x, y);
-      current.current = p;
-      setPaths((prev) => [...prev, p.copy()]);
-    },
-    onActive: ({ x, y }) => {
-      if (!current.current) return;
-      current.current.lineTo(x, y);
-      setPaths((prev) => [...prev.slice(0, -1), current.current!.copy()]);
-    },
-    onEnd: () => { current.current = null; },
-  }, []);
+  const pointsToPath = (pts: { x: number; y: number }[]) => {
+    if (pts.length === 0) return '';
+    return pts.reduce((d, pt, i) => d + (i === 0 ? `M${pt.x},${pt.y}` : ` L${pt.x},${pt.y}`), '');
+  };
+
+  const panResponder = useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: () => true,
+      onPanResponderGrant: (e) => {
+        const { locationX, locationY } = e.nativeEvent;
+        currentPoints.current = [{ x: locationX, y: locationY }];
+        setPaths((prev) => [...prev, pointsToPath(currentPoints.current)]);
+      },
+      onPanResponderMove: (e) => {
+        const { locationX, locationY } = e.nativeEvent;
+        currentPoints.current = [...currentPoints.current, { x: locationX, y: locationY }];
+        setPaths((prev) => [...prev.slice(0, -1), pointsToPath(currentPoints.current)]);
+      },
+      onPanResponderRelease: () => {
+        currentPoints.current = [];
+      },
+    })
+  ).current;
 
   return (
-    <View style={styles.wrapper}>
-      {/* Dotted guide letter rendered behind the canvas */}
+    <View style={styles.wrapper} {...panResponder.panHandlers}>
+      {/* Dotted guide letter */}
       {guideLetter && (
         <View style={styles.guideContainer} pointerEvents="none">
           <Text style={styles.guideLetter}>{guideLetter}</Text>
         </View>
       )}
 
-      <Canvas style={styles.canvas} onTouch={touchHandler}>
-        {paths.map((p, i) => (
+      <Svg style={StyleSheet.absoluteFill}>
+        {paths.map((d, i) => (
           <Path
             key={i}
-            path={p}
-            color={strokeColor}
-            style="stroke"
+            d={d}
+            stroke={strokeColor}
             strokeWidth={strokeWidth}
-            strokeCap="round"
-            strokeJoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            fill="none"
           />
         ))}
-      </Canvas>
+      </Svg>
 
       {paths.length === 0 && (
         <View style={styles.hint} pointerEvents="none">
@@ -84,13 +93,11 @@ const styles = StyleSheet.create({
   guideLetter: {
     fontSize: 110,
     fontWeight: '900',
-    color: 'rgba(0, 137, 123, 0.10)',
-    // Dashed border effect using text shadow repeats
-    textShadowColor: 'rgba(0, 137, 123, 0.22)',
+    color: 'rgba(0,137,123,0.10)',
+    textShadowColor: 'rgba(0,137,123,0.22)',
     textShadowOffset: { width: 0, height: 0 },
     textShadowRadius: 2,
   },
-  canvas: { flex: 1 },
   hint: {
     ...StyleSheet.absoluteFillObject,
     alignItems: 'center',
