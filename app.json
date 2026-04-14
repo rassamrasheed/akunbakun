@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "AkunBakun_temp",
-    "slug": "AkunBakun_temp",
+    "name": "AkunBakun",
+    "slug": "akunbakun",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

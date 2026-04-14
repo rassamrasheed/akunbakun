@@ -1,0 +1,290 @@
+[
+  {
+    "char": "ހ",
+    "unicode": "U+0780",
+    "name": "haa",
+    "phonetic": "ha",
+    "strokeOrder": ["top-to-bottom", "curve"],
+    "exampleWordDhivehi": "ހާސި",
+    "exampleWordEnglish": "house"
+  },
+  {
+    "char": "ށ",
+    "unicode": "U+0781",
+    "name": "shaviyani",
+    "phonetic": "sha",
+    "strokeOrder": ["top-left", "loop"],
+    "exampleWordDhivehi": "ށަދީ",
+    "exampleWordEnglish": "shadow"
+  },
+  {
+    "char": "ނ",
+    "unicode": "U+0782",
+    "name": "noonu",
+    "phonetic": "no",
+    "strokeOrder": ["downward", "hook"],
+    "exampleWordDhivehi": "ނާމާ",
+    "exampleWordEnglish": "name"
+  },
+  {
+    "char": "ރ",
+    "unicode": "U+0783",
+    "name": "raa",
+    "phonetic": "ra",
+    "strokeOrder": ["curve", "tail"],
+    "exampleWordDhivehi": "ރިސީ",
+    "exampleWordEnglish": "rice"
+  },
+  {
+    "char": "ބ",
+    "unicode": "U+0784",
+    "name": "ba",
+    "phonetic": "ba",
+    "strokeOrder": ["horizontal", "vertical"],
+    "exampleWordDhivehi": "ބަސް",
+    "exampleWordEnglish": "bus"
+  },
+  {
+    "char": "ޅ",
+    "unicode": "U+0785",
+    "name": "lhaviyani",
+    "phonetic": "lha",
+    "strokeOrder": ["loop", "whip"],
+    "exampleWordDhivehi": "ޅިދު",
+    "exampleWordEnglish": "letter"
+  },
+  {
+    "char": "ކ",
+    "unicode": "U+0786",
+    "name": "kaafu",
+    "phonetic": "ka",
+    "strokeOrder": ["downward", "curve"],
+    "exampleWordDhivehi": "ކަރި",
+    "exampleWordEnglish": "car"
+  },
+  {
+    "char": "އ",
+    "unicode": "U+0787",
+    "name": "alifu",
+    "phonetic": "a",
+    "strokeOrder": ["straight-down"],
+    "exampleWordDhivehi": "އަސް",
+    "exampleWordEnglish": "apple"
+  },
+  {
+    "char": "ވ",
+    "unicode": "U+0788",
+    "name": "vaavu",
+    "phonetic": "va",
+    "strokeOrder": ["curve-left", "tail"],
+    "exampleWordDhivehi": "ވާތް",
+    "exampleWordEnglish": "water"
+  },
+  {
+    "char": "މ",
+    "unicode": "U+0789",
+    "name": "maamu",
+    "phonetic": "ma",
+    "strokeOrder": ["horizontal", "loop"],
+    "exampleWordDhivehi": "މަހަރު",
+    "exampleWordEnglish": "boat"
+  },
+  {
+    "char": "ފ",
+    "unicode": "U+078A",
+    "name": "faafu",
+    "phonetic": "fa",
+    "strokeOrder": ["top-curve", "tail"],
+    "exampleWordDhivehi": "ފަރި",
+    "exampleWordEnglish": "fish"
+  },
+  {
+    "char": "ދ",
+    "unicode": "U+078B",
+    "name": "dhaalu",
+    "phonetic": "dha",
+    "strokeOrder": ["curve", "hook"],
+    "exampleWordDhivehi": "ދިން",
+    "exampleWordEnglish": "day"
+  },
+  {
+    "char": "ތ",
+    "unicode": "U+078C",
+    "name": "thaa",
+    "phonetic": "tha",
+    "strokeOrder": ["circle", "dot"],
+    "exampleWordDhivehi": "ތިން",
+    "exampleWordEnglish": "tin"
+  },
+  {
+    "char": "ލ",
+    "unicode": "U+078D",
+    "name": "laamu",
+    "phonetic": "la",
+    "strokeOrder": ["downward", "curve"],
+    "exampleWordDhivehi": "ލިބް",
+    "exampleWordEnglish": "book"
+  },
+  {
+    "char": "ގ",
+    "unicode": "U+078E",
+    "name": "gaafu",
+    "phonetic": "ga",
+    "strokeOrder": ["loop", "tail"],
+    "exampleWordDhivehi": "ގޮލް",
+    "exampleWordEnglish": "gold"
+  },
+  {
+    "char": "ޏ",
+    "unicode": "U+078F",
+    "name": "gnaviyani",
+    "phonetic": "gna",
+    "strokeOrder": ["curve", "hook"],
+    "exampleWordDhivehi": "ޏިން",
+    "exampleWordEnglish": "king"
+  },
+  {
+    "char": "ސ",
+    "unicode": "U+0790",
+    "name": "seenu",
+    "phonetic": "sa",
+    "strokeOrder": ["bottom-loop", "tail"],
+    "exampleWordDhivehi": "ސިމި",
+    "exampleWordEnglish": "sun"
+  },
+  {
+    "char": "ޑ",
+    "unicode": "U+0791",
+    "name": "dhaal",
+    "phonetic": "dda",
+    "strokeOrder": ["straight-down", "hook"],
+    "exampleWordDhivehi": "ޑިޓާ",
+    "exampleWordEnglish": "data"
+  },
+  {
+    "char": "ޒ",
+    "unicode": "U+0792",
+    "name": "zaa",
+    "phonetic": "za",
+    "strokeOrder": ["loop", "dot"],
+    "exampleWordDhivehi": "ޒިރި",
+    "exampleWordEnglish": "zebra"
+  },
+  {
+    "char": "ޓ",
+    "unicode": "U+0793",
+    "name": "taa",
+    "phonetic": "ta",
+    "strokeOrder": ["curve", "line"],
+    "exampleWordDhivehi": "ޓިލް",
+    "exampleWordEnglish": "table"
+  },
+  {
+    "char": "ޔ",
+    "unicode": "U+0794",
+    "name": "ya",
+    "phonetic": "ya",
+    "strokeOrder": ["zigzag", "loop"],
+    "exampleWordDhivehi": "ޔުދީ",
+    "exampleWordEnglish": "yacht"
+  },
+  {
+    "char": "ޕ",
+    "unicode": "U+0795",
+    "name": "pa",
+    "phonetic": "pa",
+    "strokeOrder": ["downward", "hook"],
+    "exampleWordDhivehi": "ޕާސް",
+    "exampleWordEnglish": "pass"
+  },
+  {
+    "char": "ޖ",
+    "unicode": "U+0796",
+    "name": "ja",
+    "phonetic": "ja",
+    "strokeOrder": ["curve", "dot"],
+    "exampleWordDhivehi": "ޖިވި",
+    "exampleWordEnglish": "jelly"
+  },
+  {
+    "char": "ޗ",
+    "unicode": "U+0797",
+    "name": "cha",
+    "phonetic": "cha",
+    "strokeOrder": ["loop", "hook"],
+    "exampleWordDhivehi": "ޗުލް",
+    "exampleWordEnglish": "chalk"
+  },
+  {
+    "char": "ޘ",
+    "unicode": "U+0798",
+    "name": "ttha",
+    "phonetic": "tta",
+    "strokeOrder": ["curve", "loop"],
+    "exampleWordDhivehi": "ޘިފް",
+    "exampleWordEnglish": "butter"
+  },
+  {
+    "char": "ޙ",
+    "unicode": "U+0799",
+    "name": "hha",
+    "phonetic": "hha",
+    "strokeOrder": ["top-to-bottom", "bar"],
+    "exampleWordDhivehi": "ޙިން",
+    "exampleWordEnglish": "hello"
+  },
+  {
+    "char": "ޚ",
+    "unicode": "U+079A",
+    "name": "khaa",
+    "phonetic": "kha",
+    "strokeOrder": ["curve", "dot"],
+    "exampleWordDhivehi": "ޚިބް",
+    "exampleWordEnglish": "hat"
+  },
+  {
+    "char": "ޛ",
+    "unicode": "U+079B",
+    "name": "zhaa",
+    "phonetic": "zh",
+    "strokeOrder": ["loop", "line"],
+    "exampleWordDhivehi": "ޛިޑް",
+    "exampleWordEnglish": "measure"
+  },
+  {
+    "char": "ޜ",
+    "unicode": "U+079C",
+    "name": "ghaa",
+    "phonetic": "gha",
+    "strokeOrder": ["spiral", "tail"],
+    "exampleWordDhivehi": "ޜިމް",
+    "exampleWordEnglish": "ghost"
+  },
+  {
+    "char": "ޝ",
+    "unicode": "U+079D",
+    "name": "shaa",
+    "phonetic": "sha",
+    "strokeOrder": ["curve", "swirl"],
+    "exampleWordDhivehi": "ޝިގް",
+    "exampleWordEnglish": "shark"
+  },
+  {
+    "char": "ޞ",
+    "unicode": "U+079E",
+    "name": "ssaa",
+    "phonetic": "ssa",
+    "strokeOrder": ["hook", "dot"],
+    "exampleWordDhivehi": "ޞީދު",
+    "exampleWordEnglish": "school"
+  },
+  {
+    "char": "ޟ",
+    "unicode": "U+079F",
+    "name": "nna",
+    "phonetic": "nna",
+    "strokeOrder": ["loop", "tail"],
+    "exampleWordDhivehi": "ޟާން",
+    "exampleWordEnglish": "moon"
+  }
+]
