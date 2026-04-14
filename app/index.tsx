@@ -265,8 +265,9 @@ const styles = StyleSheet.create({
   },
   moduleGrid: {
     flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: 10,
+    gap: 12,
   },
   moduleCard: {
     width: 160,
